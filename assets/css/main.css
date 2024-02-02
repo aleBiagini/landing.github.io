@@ -1886,12 +1886,19 @@ body {
 .grid .row {
     display: grid;
     grid-template-columns: 150px 1fr auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.grid .row b{
+    color: #8d9eff;
+
 }
 
 @media(max-width: 767px) {
     .grid .row {
         grid-template-columns: 100%;
+        margin-bottom: 20px;
+
     }
 }
 
@@ -1902,3 +1909,11 @@ body {
 .grid .row .cell:nth-child(2) {}
 
 .grid .row .cell:nth-child(3) {}
+
+.side-nav li:nth-child(6)::before{
+    content: "06";
+}
+
+.side-nav li:nth-child(7)::before{
+    content: "07";
+}

@@ -1367,6 +1367,13 @@ body {
 .services {
     max-width: 300px;
 
+
+}
+
+@media(max-width:767px) {
+    .services {
+        margin-top: 67px;
+    }
 }
 
 .services ul {

@@ -1960,7 +1960,64 @@ body {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(184, 191, 193, 1) 100%);
 }
 
-.perspective--modalview{
+.perspective--modalview {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(184, 191, 193, 1) 100%);
+}
+
+.cv * {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+
+}
+
+.cv .about--banner {
+    height: auto;
+}
+
+.cv .row ul {
+    margin: 1em auto;
+}
+
+.cv .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cv .grid-container .grid {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cv .grid-container b {
+    color: #fff;
+}
+
+.cv .custom-img {
+    position: static;
+    max-width: 200px;
+    height: auto;
+}
+
+@media print {
+
+    .cv ul {
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(55, 99, 109) 100%);
+    }
+
+
+
+    .cv>ul>li {
+        margin-top: 50px;
+    }
+
+    .cv .grid {
+        background: none;
+    }
+
+    * {
+        color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
 }

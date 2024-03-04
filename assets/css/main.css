@@ -1995,14 +1995,51 @@ body {
 
 .cv .custom-img {
     position: static;
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
 }
+
+.cv .cell.img {
+    grid-column: 1/3;
+    justify-self: center;
+}
+
+.cv .grid .row{
+    display: block;
+}
+.cv .grid .img{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.cv img {
+    page-break-before: auto; /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
+    page-break-after: auto; /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
+    page-break-inside: avoid; /* or 'auto' */
+}
+
+.cv h2 {
+    margin-block-end: 20px;
+}
+
+.cv .title.courses{
+    margin-top: 70px;
+}
+
+.cv .title-portfolio{
+    margin-top: 240px;
+    
+}
+
+.cv .row .cell:first-child{
+    padding-top: 20px;
+}
+
 
 @media print {
 
     .cv ul {
-        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(55, 99, 109) 100%);
+        /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(55, 99, 109) 100%); */
     }
 
 
@@ -2013,7 +2050,10 @@ body {
 
     .cv .grid {
         background: none;
+
     }
+
+   
 
     * {
         color-adjust: exact;
